@@ -1,0 +1,36 @@
+body {
+  font-family: 'Droid Serif';
+}
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: 600;
+}
+
+.remark-slide-content h1 {
+  font-size: 75px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #17223c; 
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono';
+  font-size: 22px;
+  line-height: 1.2em;
+}
+
+.pink h1 {
+   color: #17223C;
+   background-color: #F49BC2;
+   display: inline;
+ }
+
+.purple h1 {
+  color: #17223C;
+  background-color: #caa9fa;
+  display: inline;
+}
