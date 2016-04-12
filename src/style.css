@@ -5,10 +5,11 @@ body {
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz';
   font-weight: 600;
+  color: #17223C;
 }
 
 .remark-slide-content h1 {
-  font-size: 75px;
+  font-size: 80px;
   line-height: 1.5;
 }
 
