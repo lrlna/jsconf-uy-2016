@@ -1,9 +1,10 @@
 body {
   font-family: 'Droid Serif';
+  color: #17223C;
 }
 
 h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 600;
   color: #17223C;
 }
@@ -25,13 +26,17 @@ a {
 }
 
 .pink {
-   color: #17223C;
-   background-color: #F49BC2;
-   display: inline;
+  background-color: #F49BC2;
+  display: inline;
  }
 
 .purple h1 {
-  color: #17223C;
   background-color: #caa9fa;
   display: inline;
+}
+
+.citation {
+  background-color: #F49BC2;
+  display: inline;
+
 }
