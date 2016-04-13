@@ -3,13 +3,17 @@ body {
   color: #17223C;
 }
 
+h1 {
+  line-height: 1.5;
+}
+
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 600;
   color: #17223C;
 }
 
-.remark-slide-content h1 {
+.remark-slide-content .big-one{
   font-size: 80px;
   line-height: 1.5;
 }
@@ -30,7 +34,7 @@ a {
   display: inline;
  }
 
-.purple h1 {
+.purple {
   background-color: #caa9fa;
   display: inline;
 }
