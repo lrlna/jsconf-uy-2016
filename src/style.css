@@ -41,6 +41,5 @@ a {
 
 .citation {
   background-color: #F49BC2;
-  display: inline;
-
+  align: bottom;
 }
