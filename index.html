@@ -74,7 +74,7 @@
 
       class: middle
 
-      # .center[.pink[definining a complex system .cool]]
+      # .pink[definining a complex system .cool]
 
       .citation[Melanie Mitchell's definition]
 
@@ -83,7 +83,7 @@
 
       class: middle
 
-      # .center[.pink[Simple components following simple rules to create a more complicated object]]
+      # .pink[Simple components following simple rules to create a more complicated object]
 
       .citation[Irina's definition]
 
@@ -299,6 +299,74 @@
 
       # .pink[Elementary Cellular Automata]
 
+      ---
+      class: center, middle
+
+      # .pink[1 dimensional + binary]
+
+      ---
+      class: center, middle
+
+      ######![koala](./src/images/koala.png)
+
+      ---
+      class: center, middle
+
+      ######![turtle](./src/images/turtle.png)&nbsp&nbsp&nbsp![koala](./src/images/koala.png)&nbsp&nbsp&nbsp![turtle](./src/images/turtle.png)
+
+      ---
+      class: center, middle
+      ???
+      clever way to write out: each change its state as a function of its neighbouring states
+      ---
+      background-image: url(./src/images/keyboard.gif)
+      background-size: cover
+
+      class: center, middle
+
+      # .pink[Let's take a look]
+
+      ---
+      # .pink[One dimensional lattice:]
+
+      ###&nbsp&nbsp&nbsp&nbsp&nbsp| ![turtle](./src/images/turtleSmall.png)&nbsp![koala](./src/images/koalaSmall.png)&nbsp&nbsp![koala](./src/images/koalaSmall.png)&nbsp&nbsp![turtle](./src/images/turtleSmall.png)&nbsp![turtle](./src/images/turtleSmall.png)![koala](./src/images/koalaSmall.png)
+
+
+      ---
+      # .pink[One dimensional lattice:]
+
+      ### &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp| ![turtle](./src/images/turtleSmall.png)&nbsp![koala](./src/images/koalaSmall.png)&nbsp&nbsp![koala](./src/images/koalaSmall.png)&nbsp&nbsp![turtle](./src/images/turtleSmall.png)&nbsp![turtle](./src/images/turtleSmall.png)![koala](./src/images/koalaSmall.png) ] generation of cells = *N*
+      ###t&nbsp&nbsp&nbsp&nbsp| &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp] *N+1*
+      ###i&nbsp&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp] *N+2*
+      ###m&nbsp&nbsp| &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp] *N+3*
+      ###e&nbsp&nbsp&nbsp| &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp] *N+4*
+      ### &nbsp&nbsp&nbsp&nbsp&nbsp| &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp] *N+5*
+
+      ---
+      class: center, middle
+
+      # .pink[Look to your left, look to your right]
+
+      ```javascript
+        [].forEach.call(parentCells, function(parentCell, index) {
+            var right = parentCell.nextElementSibling
+            var left = parentCell.previousElementSibling
+            rule110(parentCell, right, left, index)
+        })
+      ```
+      ???
+      get left right emoji
+
+      ---
+      class: center, middle
+
+      ???
+
+      ---
+      class: center, middle
+
+      ???
+      clever way to write out: each change its state as a function of its neighbouring states
     </textarea>
 
     <script src="./src/remark.js"></script>
